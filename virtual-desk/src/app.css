@@ -1,0 +1,12 @@
+:root{
+  background:url('desk-texture.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.screen-image{
+  height: 100%;
+  width: 100%;
+  ;
+}
