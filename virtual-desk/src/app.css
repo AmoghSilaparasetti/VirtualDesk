@@ -3,10 +3,21 @@
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 
 .screen-image{
-  height: 100%;
   width: 100%;
-  ;
+  height: 100%;
+  pointer-events: none;
+}
+
+.panel{
+  background: rgba(255,255,255,0.03);
+  padding:1rem;
+  border-radius:8px;
+  color:#fff;
+  max-width:900px;
+  position: fixed;
+  top: 70px;
 }
