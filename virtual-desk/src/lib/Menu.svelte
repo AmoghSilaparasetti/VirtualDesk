@@ -31,6 +31,11 @@
 </nav>
 
 <style>
+  .menu {
+    background-color: black;
+    margin: -16px;
+    border-radius: 5px;
+  }
   .menu ul{ list-style:none; margin:-10px; padding:0; display:flex; gap:0.5rem; }
   .menu button{
     padding:0.5rem 0.75rem; border-radius:6px; border:1px solid rgba(0,0,0,0.12);
