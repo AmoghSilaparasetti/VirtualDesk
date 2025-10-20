@@ -1,6 +1,7 @@
 <script>
   import Menu from './lib/Menu.svelte';
   import MusicPlayer from './lib/MusicPlayer.svelte';
+  import NutritionAnalyzer from './lib/NutritionAnalyzer.svelte';
 
   let active = 'canvas';
   function onSelect(e){ active = e.detail.id }
@@ -24,7 +25,7 @@
     {:else if active === 'game'}
       <div class="panel"> <h2>Simple Game</h2> <p>Placeholder for a simple chess game.</p> </div>
     {:else if active === 'foodai'}
-      <div class="panel"> <h2>Nutrition Analyzer</h2> <p>Placeholder for Nutrition Analyzer controls.</p> </div>
+      <NutritionAnalyzer/>
     {/if}
   </section>
 
