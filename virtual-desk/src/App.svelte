@@ -1,6 +1,7 @@
 <script>
   import Menu from './lib/Menu.svelte';
   import MusicPlayer from './lib/MusicPlayer.svelte';
+  import NutritionAnalyzer from './lib/NutritionAnalyzer.svelte';
   import track1 from './music/track1.mp3';
   import track2 from './music/track2.mp3';
   import track3 from './music/track3.mp3';
@@ -35,7 +36,7 @@
     {:else if active === 'game'}
       <div class="panel"> <h2>Simple Game</h2> <p>Placeholder for a simple chess game.</p> </div>
     {:else if active === 'foodai'}
-      <div class="panel"> <h2>Nutrition Analyzer</h2> <p>Placeholder for Nutrition Analyzer controls.</p> </div>
+      <NutritionAnalyzer/>
     {:else if active === 'music'}
       <div class="panel">
         <h2>Music Player</h2>
