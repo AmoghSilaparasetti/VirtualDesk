@@ -3,9 +3,10 @@
   const dispatch = createEventDispatcher();
 
   export let items = [
-    { id: 'canvas', label: 'Canvas'} ,
-    { id: 'game', label: 'Simple Game'} ,
-    { id: 'foodai', label: 'Nutrition Analyzer'}
+    { id: 'canvas', label: 'Canvas'},
+    { id: 'game', label: 'Simple Game'},
+    { id: 'foodai', label: 'Nutrition Analyzer'},
+    { id: 'music', label: 'Music Player'}
   ];
 
   let active = items[0].id;
