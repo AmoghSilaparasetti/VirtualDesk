@@ -1,7 +1,9 @@
 <script>
   import Menu from './lib/Menu.svelte';
+  import Canvas from './lib/Canvas.svelte';
   import MusicPlayer from './lib/MusicPlayer.svelte';
   import NutritionAnalyzer from './lib/NutritionAnalyzer.svelte';
+  import Wordle from './lib/Wordle.svelte';
   import track1 from './music/track1.mp3';
   import track2 from './music/track2.mp3';
   import track3 from './music/track3.mp3';
@@ -32,9 +34,14 @@
   <!-- overlay content area -->
   <section class="app-content" style="position:relative; z-index:2; padding:1rem;">
     {#if active === 'canvas'}
-      <div class="panel"> <h2>Canvas</h2> <p>Placeholder for canvas drawing feature.</p> </div>
+      <section class="canvas-wrapper">
+        <Canvas />
+      </section>
     {:else if active === 'game'}
-      <div class="panel"> <h2>Simple Game</h2> <p>Placeholder for a simple chess game.</p> </div>
+      <div class = "panel">
+        <Wordle/>
+      </div>
+      
     {:else if active === 'foodai'}
       <NutritionAnalyzer/>
     {:else if active === 'music'}
