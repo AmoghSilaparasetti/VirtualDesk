@@ -14,13 +14,16 @@
 }
 
 .panel{
-  background: rgba(255,255,255,0.03);
-  padding:1rem;
-  border-radius:8px;
-  color:#fff;
-  max-width:900px;
   position: fixed;
-  top: 70px;
+  top: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 1200px);
+  height: calc(88vh);
+  max-width: 1200px;
+  padding: 1.25rem;
+  color: #fff;
+  z-index: 5;
 }
 
 .food-image{
